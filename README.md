@@ -8,9 +8,9 @@ BROWSER SET UP
 2. Develop Menu - To see develop menu for Safari Technology Preview -Open Safari Technology Preview, click on “Safari Technology Preview” menu on the top left corner and choose “Developer”. Click on “Experimental Features” tab. Click “Private Click Measurement Debug Mode”.
 Your Safari Technology preview browser is ready for testing.
 
-HOSTING A WEBSITE ON YOUR LOCAL SERVER
+HOSTING WEBSITES ON YOUR LOCAL SERVER
 
-For Step 2 redirects, you will need to set up a webpage similar to that of an advertiser’s website where the conversion will happen. In this section, we will go step by step to set that up.
+For Step 2 redirects, you will need to set up a webpage similar to that of an advertiser’s website where the conversion will happen. In this section, we will go step by step to set that up. Here we will host search.example and shop.example. And redirects will happen between them
 
 0. Install nodejs from https://nodejs.org/en/download/
 1. Create a simple server.js file (Already included in the github link)
@@ -22,7 +22,7 @@ openssl req -x509 -nodes -days 30 -newkey rsa:2048 -keyout key.pem -out certific
 127.0.0.1 search.example
 127.0.0.1 shop.example
 6. Start the node server - node server.js
-7. Restart safari and visit https://search.example
+7. Restart safari and visit https://search.example, click an ad on it, will direct users to shop.example and you can make a conversion there
 
 TEST STEP 1 2 3
 
