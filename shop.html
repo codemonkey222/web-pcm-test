@@ -8,9 +8,12 @@
 <script>
     function convert() {
         console.log("pixel");
-        fetch('https://search.example/redirect', {
-  			mode: "no-cors" // 'cors' by default
-		})
+        fetch('https://sample-app-jieming.herokuapp.com/pixel', {
+            mode: "no-cors", // 'cors' by default
+            header: {
+                'Access-Control-Allow-Origin':'*',
+            }
+        })
         .then(response => response.text())
         .then(data => console.log(data));
     }
